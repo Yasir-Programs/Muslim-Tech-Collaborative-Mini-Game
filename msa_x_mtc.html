@@ -1,0 +1,50 @@
+
+<!-- What I Want on the Marketing Game:
+    Title Screen w/ MSA X MTC Presents
+    Next Screen w/ only Play Button
+    Click Play = Hallway png & pov: you are a new member in the lb muslim community w/text background goes away after up arrow key
+    Up arrow key = goes closer to door w/text saying you hear noise coming from behind this door, would u like to approach the door, up arrow key
+    Up arrow key = 2 options now: read flyer (1 key) & open door (2 key)
+    1 key: flyer will read MSA X MTC Collab for "Event Name", option 2 to enter
+    2 key: Black screen for 5 seconds and says welcome to our muslim community -->
+
+
+
+
+<html lang = "en">
+<head>
+    <title>MSA X MTC Presents</title>
+    <style>
+        /* Reset */
+        * {margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: #000;
+            color: #fff;
+            font-family: serif;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* All Screens Hidden by Default */
+        .screen {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+            height: 100vh;
+            text-align: center;
+            padding: 24px;
+        }
+        
+        /* Allows screen to be shown to users */
+        .screen.active {display: flex; }
+
+        /* 
+
+
+img.src = "hallway.png";
